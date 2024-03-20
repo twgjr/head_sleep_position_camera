@@ -10,7 +10,7 @@ I expermented on two different device concepts:
 
 1.  Wearable:  A battery powered tile worn as a head band.  It used an accelerometer to track the position of the head.  Though simple and inexpensive, this was quickly abandoned due to risks of choking and batteries near infants.
 
-1.  Camera:  Camera to observe sleeping head pose from without contact.  Used head pose detection AI and on-board accelerometer to estimate the head position relative to a flat level bed.  Two approaches were tried for the camera:
+1.  Camera:  Camera to observe sleeping head pose without contact.  Used head pose detection AI and on-board accelerometer to estimate the head position relative to a flat level bed.  Two approaches were tried for the camera:
 
     * On-device AI model:  The camera used a Raspberry Pi to run a head pose detection AI model.  The head pose would then be corrected with the accelerometer data to estimate the head position relative to the bed.  I based the proof of concept on the LearnOpenCV blog post [Head Pose Estimation using OpenCV and Dlib](https://www.learnopencv.com/head-pose-estimation-using-opencv-and-dlib/).  This could only process 1 frame per 30 seconds. So, I would need to find a more efficient AI model or a more powerful (expensive) processor.
 
